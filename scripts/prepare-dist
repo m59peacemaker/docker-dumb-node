@@ -1,0 +1,7 @@
+#!/bin/sh
+
+VERSION="$1"
+
+mkdir -p dist
+cp README.md dist/README.md
+sed "s/{VERSION}/$VERSION/" Dockerfile.template > dist/Dockerfile

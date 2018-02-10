@@ -1,0 +1,5 @@
+#!/bin/sh
+
+SOURCE="library/node"
+REPO="m59peacemaker/docker-dumb-node"
+IMAGE="pmkr/dumb-node"
