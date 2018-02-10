@@ -1,6 +1,6 @@
 branches:
-  exclude:
-    - dist
+  only:
+    - master
 language: bash
 script:
 - make auto-update
