@@ -23,5 +23,5 @@ if [ -z "$existing_tag" ]; then
   git commit -m "$LATEST_VERSION"
   git tag -a "$LATEST_VERSION" -m "$LATEST_VERSION"
 
-  git push -u origin dist
+  git push --follow-tags -u origin dist
 fi
