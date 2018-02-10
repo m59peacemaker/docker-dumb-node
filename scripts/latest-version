@@ -3,6 +3,6 @@
 . ./scripts/vars
 
 RECENT_TAGS="$(curl -s -L -H "Accept: application/json" "https://hub.docker.com/v2/repositories/$SOURCE/tags?page_size=25")"
-LATEST_VERSION="$(echo "$RECENT_TAGS" | grep -oP '(?<="name"\: ")([0-9]\.?){3,}(?=-alpine")'
+LATEST_VERSION="$(echo "$RECENT_TAGS" | grep -oP '(?<="name"\: ")([0-9]\.?){3,}(?=-alpine")')"
 
 printf "$LATEST_VERSION"
